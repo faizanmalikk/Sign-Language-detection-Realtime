@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+	<!---------------------------------------- Grid Button --------------------->
+	<div class="container mt-5" style="text-align: center;">
+		<div class="row">
+		 <div class="col-sm-6 text-white">
+			<!-- <a href="{% url 'animation' %}" class="button_button button1" style="width:150px; height: 120px; text-align: center;"> -->
+			<a href="{% url 'animation' %}">
+				<img id="rcorners1" src="{% static '1-removebg-preview.png' %}" style=" margin-top: 100px;" alt="Forest" width="170" height="100">
+			</a>
+		 </div>   
+		 <div class="col-sm-6  text-white">
+			<a href="{% url 'gesture_to_text' %}">
+				<img id="rcorners1" src="{% static '2-removebg-preview.png' %}" style=" margin-top: 100px;" alt="Forest" width="170" height="100">
+			</a>
+		 </div>
+	   </div>
+	 </div>
+	 
+	{% endblock %}
